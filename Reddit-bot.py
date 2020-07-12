@@ -21,15 +21,30 @@ marvin_quotes = \
 
 reddit = praw.Reddit('bot1')
 
-subreddit = reddit.subreddit("breakingbad")
+# subreddit = reddit.subreddit("breakingbad")
 
-for comment in subreddit.stream.comments():
-    if re.search("skyler", comment.body, re.IGNORECASE):
-            marvin_reply = "Sorry to say but Skyler is not a good person. That's what I am gonna say. Thank you. And, " + random.choice(marvin_quotes)
-            # comment.reply(marvin_reply)
-            print('original comment: ', comment.body)
-            print('#'*50)
-            # print(marvin_reply)
-            print('*'*50)
+# for comment in subreddit.stream.comments():
+#     if re.search("skyler", comment.body, re.IGNORECASE):
+#             marvin_reply = "Sorry to say but Skyler is not a good person. That's what I am gonna say. Thank you. And, " + random.choice(marvin_quotes)
+#             # comment.reply(marvin_reply)
+#             print(comment)
+#             print('original comment: ', comment.author)
+#             print('#'*50)
+#             # print(marvin_reply)
+#             print('*'*50)
+
+redditor = reddit.redditor('ginger2020')
+
+comments = redditor.comments.new(limit=50)
+
+for comment in comments: 
+    try: 
+        marvin_reply = "Sorry to say but Skyler is not a good person. That's all what I am gonna say. If you think otherwise, you are Marie. :) Thanks. And take this - https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        comment.reply(marvin_reply)
+        print(comment.body)
+        print('#'*50)
+    except: 
+        print('could not post')
+        continue
     
             
