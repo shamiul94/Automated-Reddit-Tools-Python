@@ -8,3 +8,6 @@ As a Reddit user, I felt that creating some bots for some trivial jobs might be 
 3. Download images from a subreddit
 
 This list will grow in future.
+
+# Source 
+I would not be able to build these bots without reading [this blog](https://www.pythonforengineers.com/build-a-reddit-bot-part-1/) written by [Shantnu](https://github.com/shantnu). Thanks to him.
