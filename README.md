@@ -6,6 +6,7 @@ As a Reddit user, I felt that creating some bots for some trivial jobs might be 
 1. Delete all comments of a user
 2. Delete all submissions of a user
 3. Download images from a subreddit
+4. Annoy a friend - Input your friends handle and the bot will reply to your friend's last 50 comments with a [Youtube link to Rick Astley's Never Gonna Give You Up](https://www.youtube.com/watch?v=dQw4w9WgXcQ) song. Let your friend know that you are always there for him.
 
 This list will grow in future.
 
