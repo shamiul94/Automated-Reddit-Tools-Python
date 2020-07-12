@@ -11,12 +11,14 @@ As a Reddit user, I felt that creating some bots for some trivial jobs might be 
 This list will grow in future.
 
 # How to run them
-1. Install `praw` and you are good to go.
+1. Install `praw`.
 ```
 pip install praw
 ```
 
-2. Just run this command from terminal.
+2. Modify `praw.ini` file as mentioned in [this blog](https://www.pythonforengineers.com/build-a-reddit-bot-part-1/) and save it in the same folder as the python codes.
+
+3. Then just run this command from terminal.
 
 ```
 python3 botname.py
